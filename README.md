@@ -93,3 +93,7 @@ npm run dev
 ## Contribuição
 
 Sinta-se à vontade para contribuir com melhorias no projeto. Basta clonar o repositório e enviar suas propostas por meio de pull requests.
+
+
+comando novos 
+npm install multer 

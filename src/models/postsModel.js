@@ -12,3 +12,12 @@ export async function getTodosPosts() {
     // Busca todos os documentos da coleção e retorna como um array
     return colecao.find().toArray();
 };
+
+export async function criarPost(novoPost) {
+     // Seleciona o banco de dados "imersão-instabyte"
+     const db = conexao.db("imersão-instabyte");
+     // Seleciona a coleção "posts"
+     const colecao = db.collection("posts");
+     // Busca todos os documentos da coleção e retorna como um array
+     return colecao.insertOne(novoPost);
+};
